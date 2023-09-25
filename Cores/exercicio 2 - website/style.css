@@ -1,0 +1,38 @@
+body {
+    /*background-image: linear-gradient(to bottom, rgb(97, 130, 100), rgb(121, 172, 120), rgb(176, 217, 177), rgb(208, 231, 210));*/
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgb(97, 130, 100), rgb(121, 172, 120), rgb(176, 217, 177), rgb(208, 231, 210));
+    text-align: center;
+    padding: 10px;
+}
+
+a {
+padding: 0;
+color: black;
+text-decoration: none;
+margin: 5px;
+font-weight: bold;
+}
+        
+a:hover {
+text-decoration: underline;
+}
+
+img {
+    margin: 5px auto 20px 100px;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    margin-left: 5px;
+    text-align: justify;
+    text-justify: auto;
+    
+}
