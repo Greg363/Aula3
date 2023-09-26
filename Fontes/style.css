@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Text1 {
+    text-align: left;
+}
+
+.Text2 {
+    text-align: right;
+}
+
+.Text3 {
+    text-align: center;
+}
+
+.Text4 {
+    text-align: justify;
+}
