@@ -1,0 +1,26 @@
+div {
+    border: 1px solid black;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+#first {
+    background-color: darkred;
+}
+
+#second {
+    background-color: darkolivegreen;
+}
+
+#third {
+    background-color: darkblue;
+}
+
+#fourth {
+    background-color: silver;
+}
+
+#fifth {
+    background-color: darkblue;
+}
