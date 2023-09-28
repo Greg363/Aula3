@@ -1,5 +1,4 @@
 body {
-    /*background-image: linear-gradient(to bottom, rgb(97, 130, 100), rgb(121, 172, 120), rgb(176, 217, 177), rgb(208, 231, 210));*/
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -10,12 +9,17 @@ header {
     padding: 5px;
 }
 
-a {
+nav > a {
 padding: 0px;
 color: black;
 text-decoration: none;
 margin: 5px;
 font-weight: bold;
+}
+
+.underBanner > p {
+    text-align: center;
+    margin: 0px;
 }
         
 a:hover {
@@ -23,25 +27,26 @@ text-decoration: underline;
 }
 
 .banner {
-    text-align: center;
     padding: 0px;
     margin: 0px;
     background: rgba(208, 231, 210);
-}
-
-.gardenSalad {
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
-.gardenText {
+.flexContainer {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.saladText {
     text-align: left;
     padding: 5px;
+    float: left;
 }
 
-.gardenImage {
-    width: fit-content;
-    height: fit-content;
+.saladImage {
+    float: right;
     padding: 0px;
     margin: 1px;
 }
@@ -52,43 +57,9 @@ text-decoration: underline;
     margin: 1px;
 }
 
-.ramenSalad {
-    display: flex;
-    align-items: center;
-}
-
-.ramenText {
-    text-align: left;
-    padding: 5px;
-}
-
-.ramenImage {
-    width: fit-content;
-    height: fit-content;
-    padding: 0px;
-    margin: 1px;
-}
-
 .ramenBorder {
     background-image: linear-gradient(to right, rgba(110, 224, 128, 0.4), rgba(126, 224,146 , 0.5), rgba(225, 194, 98, 0.7), rgba(224, 76, 108, 0.5), rgba(224, 88, 105, 0.4));
     padding: 15px;
-    margin: 1px;
-}
-
-.potatoSalad {
-    display: flex;
-    align-items: center;
-}
-
-.potatoText {
-    text-align: left;
-    padding: 5px;
-}
-
-.potatoImage {
-    width: fit-content;
-    height: fit-content;
-    padding: 0px;
     margin: 1px;
 }
 
@@ -96,16 +67,6 @@ text-decoration: underline;
     background-image: linear-gradient(-60deg, rgba(68,148,71, 0.4), rgba(148,224,150, 0.5), rgba(224,224,81, 0.7), rgba(148,114,34, 0.5), rgba(224,194,123, 0.4));
     padding: 15px;
     margin: 1px;
-}
-
-.capreseSalad {
-    display: flex;
-    align-items: center;
-}
-
-.capreseText {
-    text-align: left;
-    padding: 5px;
 }
 
 .capreseImage {
@@ -128,43 +89,9 @@ text-decoration: underline;
     margin: 1px;
 }
 
-.caesarSalad {
-    display: flex;
-    align-items: center;
-}
-
-.caesarText {
-    text-align: left;
-    padding: 5px;
-}
-
-.caesarImage {
-    width: fit-content;
-    height: fit-content;
-    padding: 0px;
-    margin: 1px;
-}
-
 .caesarBorder {
     background-image: linear-gradient(to left, rgba(28,148,74, 0.4), rgba(133,255,179, 0.5), rgba(94,224,144, 0.7), rgba(148,87,84, 0.5), rgba(224,127,121, 0.4));
     padding: 15px;
-    margin: 1px;
-}
-
-.pastaSalad {
-    display: flex;
-    align-items: center;
-}
-
-.pastaText {
-    text-align: left;
-    padding: 5px;
-}
-
-.pastaImage {
-    width: fit-content;
-    height: fit-content;
-    padding: 0px;
     margin: 1px;
 }
 
@@ -184,51 +111,103 @@ h3 {
 
 p {
     margin-left: 5px;
-    text-align: justify;
-    text-justify: auto;
-    
+    text-align: justify;    
 }
 
 img {
-    width: fit-content;
+    max-width: 100%;
 }
 
 /* Sponsored Products */
 
 .Sponsor {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    border: 1px solid black;
+    border: 10px solid rgb(208, 231, 210);
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: flex-start;
 }
 
-.mayoText {
+.productMayo {
     text-align: left;
-    padding: 5px;
-}
-
-.mayoImage {
-    width: 200px;
-    height: 200px;
     padding: 0px;
     margin: 1px;
+    float: left;
 }
 
-.ketchupText {
-    text-align: left;
-    padding: 5px;
+.imageMayo {
+    text-align: right;
+    float: right;
 }
 
-.ketchupImage {
-    width: 200px;
-    height: 200px;
-    padding: 0px;
-    margin: 1px;
+.imageMayo > img {
+    max-width: 50%;
+}
+
+.imageKetchup {
+    text-align: right;
+    float: right;
+}
+
+.imageKetchup > img {
+    max-width: 50%;
 }
 
 .WIP {
     text-align: left;
     padding: 5px;
-    width: 534px;
-    height: 189px;
     margin: 1px;
+}
+
+.contactAndAboutWeb{
+    background-color: rgb(208, 231, 210);
+    margin-top: -21px;
+}
+
+.contactAndAboutWeb > h1{
+    text-align: center;
+    padding: 5px;
+    font-size: 42px;
+}
+
+.contactAndAboutWeb > p{
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#rickLink{
+    text-align: center;
+    padding: 5px;
+    font-size: 19px;
+    font-weight: lighter;
+    text-decoration: underline;
+    color: peru;
+}
+
+#rickLink:hover{
+    text-align: center;
+    padding: 5px;
+    font-size: 19px;
+    font-weight: bolder;
+    text-decoration: line-through;
+    color: crimson;
+}
+
+#saladGod{
+    text-align: center;
+    padding: 5px;
+    font-weight: lighter;
+    text-decoration: none;
+    color: black;
+}
+
+#saladGod:hover{
+    text-align: center;
+    padding: 5px;
+    text-decoration: underline;
+    color: crimson;
 }
