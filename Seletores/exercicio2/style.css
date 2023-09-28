@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+
+p {
+    text-indent: 20pt;
+    text-align: justify;
+}
+
+.Text {
+    background-color: tan;
+}
+
+.Text1 {
+    background-color: tan;
+    text-align: center;
+}
+
+.Text0 {
+    text-align: left;
+}
