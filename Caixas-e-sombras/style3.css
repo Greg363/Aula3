@@ -1,0 +1,29 @@
+#doge {
+    background-color: brown;
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align: center;
+    height: 250px;
+    box-shadow: -1px 3px 10px rgb(0, 0, 0);
+}
+
+.dogeImage {
+    margin-top: 10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+}
+
+#dogeTitle {
+    color: white;
+    font-size: 24px;
+}
+
+#dogeSpeak {
+    color: yellow;
+    margin-top: 25px;
+    font: 20px;
+}
