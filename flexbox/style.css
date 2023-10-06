@@ -1,0 +1,385 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+.flex-container {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    /* Banner on side code */
+    align-items: center;
+    /* Banner on side code */
+}
+
+.flexitem {
+    font-weight: bold;
+    padding: 25px;
+    margin: 0px;
+}
+
+nav {
+    background-color: rgb(40, 35, 56);
+}
+
+/*#flexlogo {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: rgb(161, 180, 194);
+    text-align: center;
+}
+
+#flexlogo > img {
+    width: 70px;
+}*/
+    /* Banner on side code */
+#flexlogoside {
+    height: 100%;
+    margin-right: auto;
+}
+
+#flexlogoside > img {
+    width: 70px;
+}
+    /* Banner on side code */
+.flexitem > a:hover {
+    font-weight: bold;
+    color: gray;   
+    text-decoration: underline;
+}
+
+.flexitem > a {
+    color: white;
+    letter-spacing: 1px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+main {
+    background-image: url("wp7043567.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: static;
+    align-items: center;
+}
+
+.subject1 {
+    background-color: rgba(0, 0, 0, 0.506);
+    text-align: center;
+    width: 400px;
+    height: 100px;
+    margin-top: 300px;
+    padding: 50px;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.733);
+}
+
+.subject1 > h1 {
+    text-shadow: 5px 5px 5px black;
+}
+
+.subject1 > p {
+    text-shadow: 5px 5px 5px black;
+}
+
+.subject1 > button{
+    color: white;
+    background-color: rgb(92, 21, 92);
+    border-radius: 50px;
+    padding: 10px;
+    transition: background-color 2s, transform 1s, color 0.5s ease;
+    border: 2px solid black;
+}
+
+.subject1 > button:hover{
+    color: black;
+    background-color: rgb(140, 34, 140);
+    transform: scale(1.1);
+}
+
+.subject1 > h1{
+    margin-top: -20px;
+}
+
+#subject2 {
+    background-color: rgba(0, 0, 0, 0.506);
+    display: flex;
+    margin-top: 150px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.box1 {
+    border-radius: 10px;
+    margin: 40px;
+    background-color: rgb(92, 21, 92);
+    box-shadow: -7px 5px 7px rgba(0, 0, 0, 0.815);
+    padding: 45px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    transition: margin-top 1s, background-color 0.7s ease;
+}
+
+.box2 {
+    border-radius: 10px;
+    margin: 40px;
+    background-color: rgb(92, 21, 92);
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.815);
+    padding: 45px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    transition: margin-top 1s, background-color 0.7s ease;
+}
+
+.box3 {
+    border-radius: 10px;
+    margin: 40px;
+    background-color: rgb(92, 21, 92);
+    box-shadow: 7px 5px 7px rgba(0, 0, 0, 0.815);
+    padding: 45px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    transition: margin-top 1s, background-color 0.7s ease;
+}
+
+.box1 > img {
+    width: 75px;
+    height: 75px;
+    margin: 0;
+}
+
+.box2 > img {
+    width: 75px;
+    height: 75px;
+    margin: 0;
+}
+
+.box3 > img {
+    width: 75px;
+    height: 75px;
+    margin: 0;
+}
+
+.box1 > p {
+    padding: 15px;
+}
+
+.box2 > p {
+    padding: 15px;
+}
+
+.box3 > p {
+    padding: 15px;
+}
+
+.box1:hover {
+    background-color: rgb(140, 34, 140);
+    margin-top: 20px;
+}
+
+.box2:hover {
+    background-color: rgb(140, 34, 140);
+    margin-top: 20px;
+}
+
+.box3:hover {
+    background-color: rgb(140, 34, 140);
+    margin-top: 20px;
+}
+
+#subject3 {
+    background-color: rgba(0, 0, 0, 0.652);
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: auto;
+}
+
+.subject3Text {
+    color: white;
+    text-align: center;
+    margin-left: 25px;
+    margin-top: -25px;
+    background-color: rgba(0, 0, 0, 0.24);
+    border-radius: 25px;
+    padding: 30px;
+}
+
+.subject3Text > h1 {
+    text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.51);
+}
+
+.subject3Text > p {
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.51);
+}
+
+.subject3Image > img {
+    width: 600px;
+    height: 400px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50px;
+    box-shadow: 5px 3px 8px rgba(255, 255, 255, 0.606);
+    transition: transform 0.5s ease-out;
+}
+
+.subject3Image > img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(16, 14, 21);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#footerCopyright {
+    color: gray;
+    margin-left: 5px;
+}
+
+#flexlogo {
+    height: 100%;
+    border-bottom: 1px solid gray;
+}
+
+#flexlogo > img {
+    width: 70px;
+}
+
+#termsConditions {
+    margin-right: 5px;
+}
+
+#termsConditions > p, a {
+    color: white;
+    text-decoration: none;
+}
+
+#termsConditions > p > a:hover{
+    text-decoration: underline;
+}
+
+#footerBottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.threeImages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.778);
+    height: 100%;
+    overflow: auto;
+    padding: 20px;
+}
+
+.Images > img {
+    width: 350px;
+    height: 250px;
+    border: 2px solid white;
+    margin: 2px;
+    border-radius: 25px;
+}
+
+.innerForm {
+    background-color: rgba(143, 91, 240, 0.535);
+    border-radius: 10px;
+    text-align: center;
+    padding: 50px 20px;
+    margin: 10px;
+    line-height: 50px;
+    max-width: 100%;
+    max-height: 100%;
+    color: white;
+}
+
+.innerForm > h2 {
+    text-shadow: 5px 5px 5px black;
+    margin-top: -50px;
+}
+
+.innerForm > form{
+    line-height: 30px;
+    text-shadow: 5px 5px 5px black;
+    margin-bottom: -30px;
+}
+
+.form {
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.246);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#Mensagem {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#nome {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50%;
+}
+
+#Email {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50%;
+}
+
+#submitButton {
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: rgba(177, 27, 222, 0.192);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    transition: all 0.5s linear;
+}
+
+#submitButton:hover {
+    background-color: rgba(140, 34, 140, 0.704);;
+}
