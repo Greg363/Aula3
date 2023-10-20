@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: gray;
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos com DOM</h1>
+    <p>Aqui tem um parágrafo</p>
+    <p id="pI">Aprendendo a usar o <strong>DOM</strong> em Javascript.</p>
+    <p class="pC">blah blah blah</p>
+    <button>Clique em mim</button>
+    <button id="botao2">second button</button>
+    <button id="scarybutton">third button</button>
+    
+    <script>
+        let corpo = document.body
+        corpo.style.backgroundColor = "black"
+
+        let para1 = document.getElementsByTagName("p")[1]
+        para1.style.color = "red"
+
+// keyword i will remember how this works (it adds an event and executes a code when i click on the element)
+
+        let clique = document.querySelector('button')
+
+        var buttonscary = document.getElementById('scarybutton')
+
+        clique.addEventListener('click', function(event) {
+            para1.style.color = 'white'
+            para2.style.color = 'white'
+            para3.style.color = 'white'
+            corpo.style.backgroundColor = 'gray'
+            
+        })
+
+        let para2 = document.getElementById("pI")
+        para2.style.color = "blue"
+
+        let para3 = document.getElementsByClassName("pC")[0]
+        para3.style.color = "purple"
+
+        let button2 = document.getElementById('botao2')
+
+        button2.addEventListener('mouseover', function(event) {
+            console.log("blah blah blah second button got a mouse over him L")
+        })
+
+        button2.addEventListener('mouseout', function(event) {
+            console.log("blah blah blah second button lost a mouse L")
+        })
+
+        document.addEventListener('keydown', function(event) {
+            console.log("Tecla pressionada " + event.key)
+        })
+
+        mouse.addEventListener('mouseout', function(event) {
+            
+        })
+
+        document.addEventListener('dbclick', function(event) {
+            
+            if (corpo.style.backgroundColor !== 'pink') {
+                corpo.style.backgroundColor = 'pink';
+            } else {
+                corpo.style.backgroundColor = 'blue'
+            }
+        })
+
+        buttonscary.addEventListener("click", function(event) {
+            setTimeout(function() {
+                window.open('imagem.png', '_blank');
+            }, 5000);
+        })
+
+    </script>
+</body>
+</html>
