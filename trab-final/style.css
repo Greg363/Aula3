@@ -3,6 +3,7 @@ body {
     margin: 0;
     font: normal 75% Arial, Helvetica, sans-serif;
     background: url(prism.png);
+    overflow-x: hidden;
   }
 
   canvas {
@@ -671,6 +672,7 @@ div {
   display: flex;
   width: 100%;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .img-fluida {
@@ -687,7 +689,7 @@ div {
 #GameReviews {
   background-color: #0000003b;
   border-left: 2px solid #003df9;
-  width: 20%;
+  width: 100%; /* remova para arrumar, ele esta mudando coisa */
   padding: 10px;
   margin-left: 50px;
   margin-bottom: 0;
@@ -700,4 +702,118 @@ div {
   text-decoration: none;
   font-size: 1.15rem;
   font-weight: 500;
+}
+
+#teamMaior {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.teamFig {
+  text-align: center;
+  color: white;
+}
+
+.underName {
+  color: rgb(104, 104, 104);
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.Name {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.teamCap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000009d;
+  text-align: center;  
+  padding: 50% 50px 40px;
+  z-index: 5;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+#teamMaior figure:hover > .teamCap {
+  opacity: 1;
+}
+
+#teamMaior figure {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  margin: 20px;
+}
+
+figure > img {
+  margin-top: 0;
+  border-bottom: 2px solid #003df9;
+  border-radius: 4px;
+}
+
+hr {
+  border-color: #003df9;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: white;
+}
+
+h3::after {
+  border-top: 2px solid;
+  border-color: #003df9;
+  content: "";
+  display: block;
+  height: 1px;
+  width: 60px;
+  margin: 13px 0 0 0;
+}
+
+#finalMessage {
+  width: 100%;
+}
+
+#finalText {
+  margin-left: 150px;
+}
+
+#finalP {
+  margin-left: 150px;
+}
+
+#lightboxMaior {
+  justify-content: center;
+  width: 100%;
+}
+
+.div-gallery {
+  margin: 2px;
+  margin-bottom: 50px;
+}
+
+.div-gallery img {
+  margin-top: 0;
+}
+
+footer {
+  background-color: black;
+  height: 60px;
+  border-top: 2px solid #003df9;
+}
+
+#copyright {
+  color: white;
+  margin-left: 150px;
+  font-size: 20px;
+  font-weight: 600;
 }

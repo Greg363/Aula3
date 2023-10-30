@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accelerated Reviews</title>
     <link rel="stylesheet" href="style.css">
-    <script src="jquery-3.7.1.slim.js"></script>
+    <link rel="stylesheet" href="lightbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 <body>
@@ -90,12 +91,16 @@
     </div>
         <ul id="GameReviews">
             <li>Ordenar por:</li>
-            <li><a href="#" data-filter="New">Novos</a></li>
-            <li><a href="#" data-filter="All">Todos</a></li>
-            <li><a href="#" data-filter="Computer">Computador</a></li>
-            <li><a href="#" data-filter="Mobile">Celular</a></li>
+            <li><a href="#" data-filter=".New">Novos</a></li>
+            <li><a href="#" data-filter="*">Todos</a></li>
+            <li><a href="#" data-filter=".Computer">Computador</a></li>
+            <li><a href="#" data-filter=".Mobile">Celular</a></li>
         </ul>
     </div>
+    <div class="game-card Computer New"></div>
+    <div class="game-card Mobile new"></div>
+    <div class="game-card Computer"></div>
+    <div class="game-card Mobile new"></div>
 </div>
 
 <div class="maior">
@@ -105,13 +110,86 @@
 <div class="linhaDiv">
     <hr class="linha">
 </div>
-    <div class="insideMaior" id="teamMaior">
+    <div class="insideMaior">
         <p class="paragraphMarginCss" id="reviewP">As reviews de jogos são como um combustível poderoso para sua jornada no mundo dos games.<br> Eles fornecem a aceleração necessária para sua decisão de escolher o próximo título a explorar.<br> Com análises detalhadas e imparciais, ajudamos os jogadores a navegar pelo vasto universo dos jogos, fornecendo insights valiosos sobre a jogabilidade, gráficos e história.<br> Esteja você em busca de uma experiência de alta octanagem ou de uma jornada mais lenta e reflexiva, nossos reviews são o seu guia confiável para a velocidade da diversão</p>
     </div>
+    <div id="teamMaior">
+        <div class="teamFig"><figure>
+            <img src="https://www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Particles/images/team1.jpg" alt="Membro do time" class="img-fluida">
+            <figcaption class="teamCap">
+                <p>"Et Veritas vos liberabit."</p>
+                <hr>
+            </figcaption>
+        </figure>
+            <p class="Name">Gregório S.</p>
+            <p class="underName">Founder</p>
+        </div>
+        <div class="teamFig"><figure>
+            <img src="https://www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Particles/images/team1.jpg" alt="Membro do time" class="img-fluida">
+            <figcaption class="teamCap">
+                <p>"É os guri"</p>
+                <hr>
+            </figcaption>
+        </figure>
+        <p class="Name">Mateus C.</p>
+        <p class="underName">Lead designer</p>
+        </div>
+        <div class="teamFig"><figure>
+            <img src="https://www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Particles/images/team1.jpg" alt="Membro do time" class="img-fluida">
+            <figcaption class="teamCap">
+                <p>"Só sei que nada sei"<br> Ass: Alemão</p>
+                <hr>
+            </figcaption>
+        </figure>
+        <p class="Name">Ricardo O.</p>
+        <p class="underName">Programmer</p>
+        </div>
+        <div class="teamFig"><figure>
+            <img src="https://www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Particles/images/team1.jpg" alt="Membro do time" class="img-fluida">
+            <figcaption class="teamCap">
+                <p>"Gosto de um pretão"</p>
+                <hr>
+            </figcaption>
+        </figure>
+        <p class="Name">Eduarda D.</p>
+        <p class="underName">Lead Artist</p>
+        </div>
+    </div>
+    <div id="finalMessage">
+        <h3 id="finalText">Final Message</h3>
+            <p class="paragraphMarginCss" id="finalP">Agradeçemos á todos no curso e ao nosso professor pela oportunidade.</p>
+                <div class="insideMaior" id="lightboxMaior">
+                    <div class="div-gallery">
+                        <a data-lightbox="final" href="https://www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Particles/images/team1.jpg"><img src="https://www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Particles/images/team1.jpg" alt=""></a>
+                    </div>
+                    <div class="div-gallery">
+                        <a data-lightbox="final" href="https://www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Particles/images/team2.jpg"><img src="https://www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Particles/images/team2.jpg" alt=""></a>
+                    </div>
+                    <div class="div-gallery">
+                        <a data-lightbox="final" href="https://www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Particles/images/team3.jpg"><img src="https://www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Particles/images/team3.jpg" alt=""></a>
+                    </div>
+                </div>
+    </div>
 </div>
+<footer>
+    <p id="copyright">&copy; Accelerated 2023</p>
+</footer>
 
+<!--
+       <div id=""> 
+            <div class="container">
+                <div class="row">
+                    <div class=">
+                        <p id="copyright">&copy; Atypical Themes <span id="year"> </span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+-->
 <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="scriptParticles.js"></script>
 <script src="script2.js"></script>
+<script src="lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
