@@ -34,3 +34,19 @@ button.addEventListener("click", function() {
         menuOpen = false
     }
 })
+
+window.onload = function() {
+    //INITIALIZE ISOTIPE
+    // cache container
+    var $container = $('#gameCards');
+    // initialize isotope
+    $container.isotope({
+    // options...
+    });
+    // filter items when filter link is clicked
+    $('#GameReviews li a').on('click', function(){
+        var selector = $(this).attr('data-filter');
+        $container.isotope({ filter: selector });
+        return false;
+    });
+}
