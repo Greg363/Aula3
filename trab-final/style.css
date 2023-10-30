@@ -680,14 +680,19 @@ div {
 
 #reviewP {
   margin-left: 50px;
+  margin-top: 0;
+  padding-top: 36px;
 }
 
 #GameReviews {
   background-color: #0000003b;
   border-left: 2px solid #003df9;
-  width: 80%;
+  width: 20%;
   padding: 10px;
   margin-left: 50px;
+  margin-bottom: 0;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 #GameReviews > li a {
@@ -695,12 +700,4 @@ div {
   text-decoration: none;
   font-size: 1.15rem;
   font-weight: 500;
-}
-
-#gameMaior {
-  background-color: #000000ab;
-}
-
-#innergameMaior {
-  background-color: #000000ab;
 }
