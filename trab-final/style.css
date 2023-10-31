@@ -3,6 +3,10 @@
   overflow-x: hidden;
 }
 
+header {
+  overflow-x: visible !important;
+}
+
 body {
     margin: 0;
     font: normal 75% Arial, Helvetica, sans-serif;
@@ -530,6 +534,8 @@ body {
   #lightboxMaior {
     flex-wrap: nowrap;
   }
+
+
 }
 
 /* ---- Computer ---- */
@@ -598,6 +604,17 @@ body {
   .botoes {
     margin-right:150px
   } 
+}
+
+@media (max-width: 1200px) {
+  .game-card {
+    flex-wrap: wrap !important;
+  }
+
+  .gameSide {
+    width: 100% !important;
+  }
+  
 }
 
 /* ---- Both ---- */
